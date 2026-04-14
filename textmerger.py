@@ -129,7 +129,7 @@ class App:
         rootPath = Path(filepath)
         files = (child for child in rootPath.iterdir() if child.is_file())
         for file in files:
-            if file.name == "PillarsOfEternity.exe":
+            if file.name == "PillarsOfEternity.exe" or 'PillarsOfEternity' in file.name:
                 return "Pillars of Eternity"
             elif file.name == "Tyranny.exe":
                 return "Tyranny"
